@@ -420,7 +420,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: royalblue;
+  text-decoration: none; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -572,6 +573,25 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.single-post .entry-header {
+  position: relative; }
+  .single-post .entry-header h1 {
+    background-color: #248A83;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .single-post .entry-header .entry-meta {
+    background-color: #248A83;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    .single-post .entry-header .entry-meta a {
+      color: #fff; }
+
 .sticky {
   display: block; }
 
@@ -669,4 +689,54 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.site {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.site-header {
+  background-color: #ccc;
+  padding: 1rem; }
+
+.site-content {
+  background-color: #ccc;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .site-content .content-area {
+    -ms-flex-preferred-size: 2;
+        flex-basis: 2;
+    background-color: orange; }
+  .site-content .widget-area {
+    -ms-flex-preferred-size: 1;
+        flex-basis: 1;
+    background-color: yellow; }
+
+/* Footer */
+.site-footer {
+  background-color: black;
+  color: white;
+  padding: 1rem; }
+  .site-footer a {
+    color: white; }
+  .site-footer .site-info {
+    text-align: center;
+    text-transform: uppercase; }
+  .site-footer .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .site-footer .footer-container .footer-grid {
+      margin: 2rem 0;
+      width: 25%; }
+    .site-footer .footer-container .footer-grid:last-child {
+      width: 50%; }
+
 /* Front page */
+.home .site {
+  max-width: 90%; }
+
+.home .site-header {
+  background-color: green;
+  padding: 1rem; }

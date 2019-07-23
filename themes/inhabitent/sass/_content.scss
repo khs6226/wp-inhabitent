@@ -4,6 +4,31 @@
 
 /* Posts and pages */
 
+.single-post {
+	.entry-header {
+		position: relative;
+		h1 {
+			background-color: $color_green-brand;
+			color: $color__background-body;
+			text-transform: uppercase;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.entry-meta{
+			background-color: $color_green-brand;
+			color: $color__background-body;
+			text-transform: uppercase;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			a{
+				color: $color__background-body;
+			}
+		}
+	}
+}
+
 .sticky {
 	display: block;
 }
