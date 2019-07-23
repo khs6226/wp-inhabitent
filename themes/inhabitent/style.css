@@ -471,7 +471,8 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    padding: 0 2rem; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -705,9 +706,8 @@ object {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto; }
 
-.site-header {
-  background-color: #ccc;
-  padding: 1rem; }
+.site-header nav li {
+  padding: 0 2rem; }
 
 .site-content {
   width: 90%;
@@ -721,6 +721,10 @@ object {
     padding-right: 3%; }
     .site-content .content-area .site-main {
       max-width: 640px; }
+      .site-content .content-area .site-main .hero-image-header {
+        height: 100vh; }
+        .site-content .content-area .site-main .hero-image-header .entry-title {
+          color: white; }
   .site-content .widget-area {
     width: 25%;
     padding-left: 3%; }
@@ -765,7 +769,3 @@ object {
 /* Front page */
 .home .site {
   max-width: 90%; }
-
-.home .site-header {
-  background-color: green;
-  padding: 1rem; }

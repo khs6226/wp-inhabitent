@@ -80,6 +80,7 @@ a {
 	li {
 		float: left;
 		position: relative;
+		padding: 0 2rem;
 
 		&:hover > a,
 		&.focus > a {

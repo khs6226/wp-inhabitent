@@ -6,8 +6,11 @@
    flex: 1 0 auto;
 }
 .site-header {
-    background-color: #ccc;
-    padding: 1rem;
+    nav{
+        li{
+            padding: 0 2rem;
+        }
+    }
 }
 .site-content {
     width: 90%;
@@ -20,6 +23,12 @@
         padding-right: 3%;
         .site-main{
             max-width: 640px;
+            .hero-image-header{
+                height: 100vh;
+                .entry-title{
+                    color: white;
+                }
+            }
         }
     }
     .widget-area {
@@ -87,10 +96,6 @@
 
     .site {
         max-width: 90%;
-    }
-    .site-header {
-        background-color: green;
-        padding: 1rem;
     }
 }
 
