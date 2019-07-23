@@ -49,7 +49,15 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh; }
 
 article,
 aside,
@@ -319,7 +327,7 @@ hr {
 
 ul,
 ol {
-  margin: 0 0 1.5rem 3rem; }
+  margin: 0; }
 
 ul {
   list-style: disc; }
@@ -569,6 +577,9 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget-area {
+  width: 25%; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -690,32 +701,41 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 .site {
-  max-width: 800px;
-  margin: 0 auto; }
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
 
 .site-header {
   background-color: #ccc;
   padding: 1rem; }
 
 .site-content {
-  background-color: #ccc;
-  padding: 1rem;
-  margin: 1rem 0;
+  width: 90%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .site-content .content-area {
-    -ms-flex-preferred-size: 2;
-        flex-basis: 2;
-    background-color: orange; }
+    width: 75%;
+    border-right: 1px solid #e1e1e1;
+    padding-right: 3%; }
+    .site-content .content-area .site-main {
+      max-width: 640px; }
   .site-content .widget-area {
-    -ms-flex-preferred-size: 1;
-        flex-basis: 1;
-    background-color: yellow; }
+    width: 25%;
+    padding-left: 3%; }
+    .site-content .widget-area .widget a {
+      color: #248A83; }
+    .site-content .widget-area .widget ul {
+      margin: 0;
+      padding: 0; }
+      .site-content .widget-area .widget ul li {
+        list-style: none;
+        padding: 0; }
 
 /* Footer */
 .site-footer {
-  background-color: black;
+  background: url(../../../../uploads/2019/07/dark-wood@2x.png);
   color: white;
   padding: 1rem; }
   .site-footer a {

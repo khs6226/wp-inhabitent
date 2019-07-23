@@ -3,33 +3,48 @@
 --------------------------------------------------------------*/
 
 .site {
-    max-width: 800px;
-    margin: 0 auto;
+   flex: 1 0 auto;
 }
 .site-header {
     background-color: #ccc;
     padding: 1rem;
 }
 .site-content {
-    background-color: #ccc;
-    padding: 1rem;
-    margin: 1rem 0;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
 
     .content-area {
-        flex-basis: 2;
-        background-color: orange;
+        width: 75%;
+        border-right: 1px solid #e1e1e1;
+        padding-right: 3%;
+        .site-main{
+            max-width: 640px;
+        }
     }
     .widget-area {
-        flex-basis: 1;
-        background-color: yellow;
+        width: 25%;
+        padding-left: 3%;
+        .widget{
+            a{
+                color: $color_green-brand;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    padding: 0;
+                }
+            }
+        }
     }
 }
 
 /* Footer */
 
 .site-footer {
-    background-color: black;
+    background: url(../../../../uploads/2019/07/dark-wood@2x.png);
     color: white;
     padding: 1rem;
     a {
