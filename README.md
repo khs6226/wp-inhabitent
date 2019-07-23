@@ -1,20 +1,14 @@
-# RED Starter
-
-A WordPress starter theme for RED Academy students, forked from Underscores.
+# Inhabitent
 
 ## Installation
 
-### 1. Download me (don't clone me!)
+### 1. Download this project
 
 Then add me to your `wp-content` directory.
 
-### 2. Rename the `redstarter-master` directory
+### 2. Install the dev dependencies
 
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+Next you'll need to run `npm install` **inside theme directory** next to install the node modules you'll need for Gulp, etc.
 
 ### 4. Update the proxy in `gulpfile.js`
 
