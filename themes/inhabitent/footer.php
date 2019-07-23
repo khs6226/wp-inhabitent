@@ -53,6 +53,9 @@
 						</div>
 					</div>
 					<div class="footer-grid">
+						<div class="footer-logo">
+							<img src="<?= get_stylesheet_directory_uri().'/images/inhabitent-logo-text.svg'; ?>" alt="inhabitent logo">
+						</div>
 					</div>
 				</div>
 				<div class="site-info">

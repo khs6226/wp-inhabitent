@@ -44,9 +44,22 @@
         .footer-grid{
             margin: 2rem 0;
             width: 25%;
+            h3{
+                color: $orange_brand_color;
+                text-transform: uppercase;
+            }
+            span{
+                font-weight: 700;
+            }
         }
         .footer-grid:last-child{
             width: 50%;
+            .footer-logo{
+                text-align: right;
+                img{
+                    max-width: 50%;
+                }    
+            }
         }
     }
 }

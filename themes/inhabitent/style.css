@@ -730,8 +730,17 @@ object {
     .site-footer .footer-container .footer-grid {
       margin: 2rem 0;
       width: 25%; }
+      .site-footer .footer-container .footer-grid h3 {
+        color: #d99054;
+        text-transform: uppercase; }
+      .site-footer .footer-container .footer-grid span {
+        font-weight: 700; }
     .site-footer .footer-container .footer-grid:last-child {
       width: 50%; }
+      .site-footer .footer-container .footer-grid:last-child .footer-logo {
+        text-align: right; }
+        .site-footer .footer-container .footer-grid:last-child .footer-logo img {
+          max-width: 50%; }
 
 /* Front page */
 .home .site {
