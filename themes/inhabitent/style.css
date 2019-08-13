@@ -709,34 +709,53 @@ object {
 .site-header nav li {
   padding: 0 2rem; }
 
-.site-content {
-  width: 90%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .site-content .content-area {
-    width: 75%;
-    border-right: 1px solid #e1e1e1;
-    padding-right: 3%; }
-    .site-content .content-area .site-main {
-      max-width: 640px; }
-      .site-content .content-area .site-main .hero-image-header {
-        height: 100vh; }
-        .site-content .content-area .site-main .hero-image-header .entry-title {
-          color: white; }
-  .site-content .widget-area {
-    width: 25%;
-    padding-left: 3%; }
-    .site-content .widget-area .widget a {
-      color: #248A83; }
-    .site-content .widget-area .widget ul {
-      margin: 0;
-      padding: 0; }
-      .site-content .widget-area .widget ul li {
-        list-style: none;
-        padding: 0; }
+.page-about .entry-content .entry-header {
+  height: 100vh; }
+  .page-about .entry-content .entry-header h1 {
+    color: #fff; }
 
+.page-about .entry-content p, .page-about .entry-content h2 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* .site-content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+    .content-area {
+        width: 75%;
+        border-right: 1px solid #e1e1e1;
+        padding-right: 3%;
+        .site-main{
+            max-width: 640px;
+            .hero-image-header{
+                height: 100vh;
+                .entry-title{
+                    color: white;
+                }
+            }
+        }
+    } */
+/* .widget-area {
+        width: 25%;
+        padding-left: 3%;
+        .widget{
+            a{
+                color: $color_green-brand;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    padding: 0;
+                }
+            }
+        }
+    }
+} */
 /* Footer */
 .site-footer {
   background: url(../../../../uploads/2019/07/dark-wood@2x.png);
