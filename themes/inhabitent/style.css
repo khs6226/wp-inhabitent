@@ -241,19 +241,19 @@ th {
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url(../../assets/fonts/merriweather-lightitalic-webfont.ttf);
+  src: url(../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf);
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url(../../assets/fonts/merriweather-bold-webfont.ttf);
+  src: url(../../fonts/Merriweather/fonts/merriweather-bold-webfont.ttf);
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url(../../assets/fonts/merriweather-bolditalic-webfont.ttf);
+  src: url(../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf);
   font-weight: bold;
   font-style: italic; }
 
@@ -270,7 +270,7 @@ textarea {
   font-family: "Merriweather Web", sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -735,6 +735,7 @@ object {
   padding: 0 2rem; }
 
 .page-about .entry-content .entry-header {
+  width: 100vw;
   height: 100vh; }
   .page-about .entry-content .entry-header h1 {
     color: #fff; }

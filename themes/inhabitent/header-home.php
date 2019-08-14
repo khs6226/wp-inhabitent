@@ -16,7 +16,7 @@
 	<?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class('page-home'); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
@@ -25,7 +25,7 @@
 					<div class="site-branding">
 						<div class="logo">
 							<a href="http://localhost/inhabitent">
-								<img src="../wp-content/themes/inhabitent/images/inhabitent-logo-tent-white.svg" alt="inhabitent logo">
+								<img src="wp-content/themes/inhabitent/images/inhabitent-logo-tent-white.svg" alt="inhabitent logo">
 							</a>
 						</div>
 					</div><!-- .site-branding -->
