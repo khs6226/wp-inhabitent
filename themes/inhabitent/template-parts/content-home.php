@@ -61,7 +61,7 @@
 					</a>
 					</h3>
 				</div>
-				<a href="<?php echo esc_url(get_permalink()); ?>">
+				<a class='journal-btn' href="<?php echo esc_url(get_permalink()); ?>">
 				Read Entry
 				</a>
 			</li>
