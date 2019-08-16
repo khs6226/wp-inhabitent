@@ -2,9 +2,6 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-.site {
-   flex: 1 0 auto;
-}
 .site-header {
     nav{
         li{
@@ -107,3 +104,19 @@
 
 
 /* Front page */
+
+.home{
+    .hero-home, .shop-stuff, .journals{
+        margin-bottom: 4.5rem;
+    }
+    img{
+        height: 275px;
+        width: 275px;
+    }
+    h2{
+        font-size: 2.4rem;
+        font-weight: 400;
+        margin-bottom: 3.75rem;
+        text-align: center;
+    }
+}
