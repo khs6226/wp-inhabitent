@@ -21,7 +21,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="header-container">
+				<div class="container">
 					<div class="site-branding">
 						<div class="logo">
 							<a href="http://localhost/inhabitent">

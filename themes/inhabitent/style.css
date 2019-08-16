@@ -257,6 +257,18 @@ th {
   font-weight: bold;
   font-style: italic; }
 
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url(../../fonts/Novecento/fonts/Novecentosanswide-normal-webfont.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url(../../fonts/Novecento/fonts/Novecentosanswide-demibold-webfont.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -466,71 +478,20 @@ a {
 
 /* Menus */
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  font-family: 'Novecento Sans Web', sans-serif;
+  text-transform: uppercase; }
   .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative;
-    padding: 0 2rem; }
-  .main-navigation a {
     display: block;
-    text-decoration: none; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5rem;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .main-navigation ul li {
+      padding-left: 1.5rem;
+      float: left;
+      position: relative; }
+      .main-navigation ul li a {
+        display: block;
+        text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -812,5 +773,25 @@ object {
           max-width: 50%; }
 
 /* Front page */
-.home .site {
-  max-width: 90%; }
+.site-header {
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
+  .site-header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .site-header img {
+    width: 50px;
+    height: 30px; }
+  .site-header .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
