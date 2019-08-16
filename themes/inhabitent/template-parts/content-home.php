@@ -26,7 +26,7 @@
 					<img src="<?php echo get_template_directory_uri()."/images/".$term->slug.".svg"; ?>" alt="">
 					<p><?php echo $term->description ?></p>
 					<p>
-						<a href="<?php echo esc_url(get_term_link($term)); ?>"><?php echo $term->name." Stuff"; ?></a>
+						<a class='btn' href="<?php echo esc_url(get_term_link($term)); ?>"><?php echo $term->name." Stuff"; ?></a>
 					</p>
 				</div>	
 		<?php }

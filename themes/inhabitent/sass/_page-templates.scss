@@ -119,4 +119,20 @@
         margin-bottom: 3.75rem;
         text-align: center;
     }
+    .products{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        img{
+            height: 70px;
+            width: 70px;
+        }
+    }
+    .products-wrapper{
+        flex: 0 1 23.5%;
+        max-width: 23.5%;
+        padding: 0.75rem;
+        border: 1px solid #e1e1e1;
+        border-top-width: 5px;
+    }
 }
