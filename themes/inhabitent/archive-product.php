@@ -5,7 +5,7 @@
  * @package RED_Starter_Theme
  */
 
-get_header('journal'); ?>
+get_header('product'); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -33,19 +33,25 @@ get_header('journal'); ?>
                     <?php 
                         $product_posts = get_posts(array(
 				            'post_type' => 'product',
-                            'posts_per_page' => 99,
+                            'posts_per_page' => '16',
                             'order' => 'ASC',
 			            )); ?>
-                    <?php foreach($posts as $post) : setup_postdata($post); ?>
-                    <!-- <article id="post-<?php the_ID(); ?>" <?php post_class('shop-product'); ?>> -->
+                    <?php foreach($product_posts as $post) : setup_postdata($post); ?>
+                    <div class='product-grid-item'>
                         <div class='thumbnail-wrapper'>
                             <a href="<?php echo esc_url(get_permalink()); ?>">
-                                <?php if (has_post_thumbnail()) :
-						            the_post_thumbnail('large');
-                                    endif; ?>
+                                <img src="<?php echo CFS() -> get('product_image'); ?>" alt="">
                             </a>
                         </div>
-                    <?php endforeach; ?>
+                        <div class='product-info'>
+                            <?php the_title('<h2 class="entry-title"></h2>'); ?>
+                        <span class='price'>
+                            <?php echo CFS() -> get('price'); ?>
+                        </span>
+                        </div>
+                    </div>
+                    <?php endforeach;
+                    wp_reset_postdata(); ?>
                 </div>
             </div>
 		</main><!-- #main -->
