@@ -34,3 +34,7 @@
 	</div>
 </section>
 
+<section class='journals'>
+	<h2>Inhabitent Journal</h2>
+	
+</section>
