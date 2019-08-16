@@ -10,7 +10,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<?php the_post_thumbnail( 'full' ); ?>
 		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -32,5 +32,10 @@
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
+		<div class='social-btn'>
+			<button><i class="fa fa-facebook" aria-hidden="true"></i>Like</button>
+			<button><i class="fa fa-twitter" aria-hidden="true"></i>Tweet</button>
+			<button><i class="fa fa-pinterest" aria-hidden="true"></i>Pin</button>
+		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

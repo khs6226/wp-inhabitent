@@ -20,6 +20,53 @@
 	height: 100vh;
 
 }
+.blog, .single{
+	.site-content{
+		display: flex;
+		.content-area{
+			border-right: 1px solid #e1e1e1;
+			padding-right: 5%;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+			width: 73%;
+			.entry-header{
+				line-height: 0;
+				position: relative;
+				h2{
+					background-color: $color_green-brand;
+					position: absolute;
+					color: #ffffff;
+					font-size: 2.1rem;
+					left: 0;
+					top: 0;
+					padding: 0.75rem 1.5rem;
+					margin-top: 2.25rem;
+					max-width: 75%;
+				}
+				a{
+					color: #ffffff;
+				}
+				.entry-meta{
+					background-color: $color_green-brand;
+					position: absolute;
+					color: #ffffff;
+					bottom: 0;
+					right: 0;
+					text-transform: uppercase;
+					display: inline-block;
+					font-family: 'Novecento Sans Web', sans-serif;
+					padding: 1rem 1.5rem;
+				}
+			}
+		}
+		.widget-area{
+			width: 27%;
+			padding-left: 5%;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+		}
+	}
+} 
 .site {
 	flex: 1 0 auto;
  }
@@ -33,6 +80,10 @@
 		h1 {
 			background-color: $color_green-brand;
 			color: $color__background-body;
+			font-size: 2.1rem;
+			padding: 0.75rem 1.5rem;
+			margin-top: 2.25rem;
+			max-width: 75%;
 			text-transform: uppercase;
 			position: absolute;
 			top: 0;
@@ -57,7 +108,7 @@
 }
 
 .hentry {
-	margin: 0 0 $base__space-unit;
+	margin: 0 0 4.5rem;
 }
 
 .updated:not(.published){
@@ -79,6 +130,20 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+.cat-links, .tags-links{
+	display: inline-block;
+	margin-right: 1.5rem;
+	font-family: 'Novecento Sans Web', sans-serif;
+	text-transform: uppercase;
+}
+.social-btn{
+	margin: 1.5rem 0;
+	i{
+		margin-right: 10px;
+	}
+}
+
 
 /* Asides */
 

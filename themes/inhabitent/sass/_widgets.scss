@@ -3,8 +3,27 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 0 $base__space-unit;
-
+	margin: 0 0 3rem;
+	h2{
+		font-size: 1.5rem;
+	}
+	p{
+		display: flex;
+		margin-bottom: 0.5rem;
+		i{
+			width: 20px;
+			margin-right: 0.5rem;
+			line-height: 1.8;
+		}
+	}
+	.day-of-week{
+		font-weight: 700;
+	}
+	ul{
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
@@ -16,7 +35,3 @@
 	display: none;
 }
 
-
-.widget-area{
-	width: 25%;
-}

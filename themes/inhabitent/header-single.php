@@ -21,11 +21,11 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="header-container">
+				<div class="container">
 					<div class="site-branding">
 						<div class="logo">
 							<a href="http://localhost/inhabitent">
-								<img src="../wp-content/themes/inhabitent/images/inhabitent-logo-tent.svg" alt="inhabitent logo">
+								<img src="../../../../wp-content/themes/inhabitent/images/inhabitent-logo-tent.svg" alt="inhabitent logo">
 							</a>
 						</div>
 					</div><!-- .site-branding -->
@@ -36,4 +36,4 @@
 				</div>
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
+			<div id="content" class="site-content container">

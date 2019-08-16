@@ -285,6 +285,13 @@ textarea {
   line-height: 1.75; }
 
 /* Headings */
+h1, h2 {
+  line-height: 1.25; }
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.25; }
+
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: 'Novecento Sans Web', sans-serif;
@@ -400,7 +407,7 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-button, .btn, .journal-btn,
+button, .btn, .journal-btn, .read-more,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -416,13 +423,13 @@ input[type="submit"] {
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase; }
-  button:hover, .btn:hover, .journal-btn:hover,
+  button:hover, .btn:hover, .journal-btn:hover, .read-more:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
     background: #1f7670;
     color: #fff; }
-  button:active, button:focus, .btn:active, .btn:focus, .journal-btn:active, .journal-btn:focus,
+  button:active, button:focus, .btn:active, .btn:focus, .journal-btn:active, .journal-btn:focus, .read-more:active, .read-more:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
   input[type="reset"]:active,
@@ -433,7 +440,7 @@ input[type="submit"] {
     -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
-.journal-btn {
+.journal-btn, .read-more {
   background-color: transparent;
   border: 1px solid #000;
   color: #000; }
@@ -563,17 +570,31 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
+  margin: 0 0 3rem;
   /* Make sure select elements fit in widgets. */ }
+  .widget h2 {
+    font-size: 1.5rem; }
+  .widget p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0.5rem; }
+    .widget p i {
+      width: 20px;
+      margin-right: 0.5rem;
+      line-height: 1.8; }
+  .widget .day-of-week {
+    font-weight: 700; }
+  .widget ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0; }
   .widget select {
     max-width: 100%; }
 
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
-
-.widget-area {
-  width: 25%; }
 
 /*--------------------------------------------------------------
 # Content
@@ -602,6 +623,47 @@ a {
   background-size: cover, cover;
   height: 100vh; }
 
+.blog .site-content, .single .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .blog .site-content .content-area, .single .site-content .content-area {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 73%; }
+    .blog .site-content .content-area .entry-header, .single .site-content .content-area .entry-header {
+      line-height: 0;
+      position: relative; }
+      .blog .site-content .content-area .entry-header h2, .single .site-content .content-area .entry-header h2 {
+        background-color: #248A83;
+        position: absolute;
+        color: #ffffff;
+        font-size: 2.1rem;
+        left: 0;
+        top: 0;
+        padding: 0.75rem 1.5rem;
+        margin-top: 2.25rem;
+        max-width: 75%; }
+      .blog .site-content .content-area .entry-header a, .single .site-content .content-area .entry-header a {
+        color: #ffffff; }
+      .blog .site-content .content-area .entry-header .entry-meta, .single .site-content .content-area .entry-header .entry-meta {
+        background-color: #248A83;
+        position: absolute;
+        color: #ffffff;
+        bottom: 0;
+        right: 0;
+        text-transform: uppercase;
+        display: inline-block;
+        font-family: 'Novecento Sans Web', sans-serif;
+        padding: 1rem 1.5rem; }
+  .blog .site-content .widget-area, .single .site-content .widget-area {
+    width: 27%;
+    padding-left: 5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+
 .site {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
@@ -615,6 +677,10 @@ a {
   .single-post .entry-header h1 {
     background-color: #248A83;
     color: #fff;
+    font-size: 2.1rem;
+    padding: 0.75rem 1.5rem;
+    margin-top: 2.25rem;
+    max-width: 75%;
     text-transform: uppercase;
     position: absolute;
     top: 0;
@@ -633,7 +699,7 @@ a {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5rem; }
+  margin: 0 0 4.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -650,6 +716,17 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+.cat-links, .tags-links {
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-family: 'Novecento Sans Web', sans-serif;
+  text-transform: uppercase; }
+
+.social-btn {
+  margin: 1.5rem 0; }
+  .social-btn i {
+    margin-right: 10px; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -740,43 +817,6 @@ object {
   margin-left: auto;
   margin-right: auto; }
 
-/* .site-content {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-
-    .content-area {
-        width: 75%;
-        border-right: 1px solid #e1e1e1;
-        padding-right: 3%;
-        .site-main{
-            max-width: 640px;
-            .hero-image-header{
-                height: 100vh;
-                .entry-title{
-                    color: white;
-                }
-            }
-        }
-    } */
-/* .widget-area {
-        width: 25%;
-        padding-left: 3%;
-        .widget{
-            a{
-                color: $color_green-brand;
-            }
-            ul{
-                margin: 0;
-                padding: 0;
-                li{
-                    list-style: none;
-                    padding: 0;
-                }
-            }
-        }
-    }
-} */
 /* Footer */
 .site-footer {
   background: url(../../../../uploads/2019/07/dark-wood@2x.png);
