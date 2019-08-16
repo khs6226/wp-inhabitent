@@ -2,13 +2,6 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-.site-header {
-    nav{
-        li{
-            padding: 0 2rem;
-        }
-    }
-}
 .page-about{
     .entry-content{
         .entry-header{
@@ -47,6 +40,8 @@
             h3{
                 color: $orange_brand_color;
                 text-transform: uppercase;
+                font-size: 1.2rem;
+                margin-bottom: 0.75rem;
             }
             span{
                 font-weight: 700;

@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
-.home{
+.home, .page-about{
 	.site-content{
 		padding-top: 0;
 	}
@@ -20,7 +20,7 @@
 	height: 100vh;
 
 }
-.blog, .single{
+.blog, .single, .journal, .error404{
 	.site-content{
 		display: flex;
 		.content-area{
@@ -105,6 +105,10 @@
 
 .sticky {
 	display: block;
+}
+
+.required{
+	color: $orange_brand_color;
 }
 
 .hentry {

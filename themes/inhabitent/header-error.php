@@ -25,7 +25,7 @@
 					<div class="site-branding">
 						<div class="logo">
 							<a href="http://localhost/inhabitent">
-								<img src="../wp-content/themes/inhabitent/images/inhabitent-logo-tent.svg" alt="inhabitent logo">
+								<img src="wp-content/themes/inhabitent/images/inhabitent-logo-tent.svg" alt="inhabitent logo">
 							</a>
 						</div>
 					</div><!-- .site-branding -->
