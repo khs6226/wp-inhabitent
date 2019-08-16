@@ -691,6 +691,12 @@ a {
     padding-top: 3rem;
     padding-bottom: 3rem; }
 
+.single-product .site-content .content-area, .tax-product-type .site-content .content-area {
+  width: 100%;
+  border: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
 .site {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
@@ -721,6 +727,9 @@ a {
     right: 0; }
     .single-post .entry-header .entry-meta a {
       color: #fff; }
+
+.entry-title, .page-title {
+  margin-top: 0; }
 
 .sticky {
   display: block; }
@@ -988,7 +997,7 @@ object {
     display: -ms-flexbox;
     display: flex; }
 
-.product .page-header {
+.product .page-header, .tax-product-type .page-header {
   text-align: center;
   border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 3rem; }
@@ -1046,3 +1055,37 @@ object {
   .product-grid-item .price {
     float: right;
     padding-left: 0.25rem; }
+
+.single-product .hentry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .single-product .hentry .product-img {
+    width: 48%; }
+  .single-product .hentry .product-content-wrapper {
+    width: 48%; }
+  .single-product .hentry .entry-title {
+    color: #d99054; }
+  .single-product .hentry .entry-content {
+    margin-top: 0; }
+    .single-product .hentry .entry-content .price {
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 1.8rem;
+      margin-top: 0;
+      text-transform: uppercase; }
+    .single-product .hentry .entry-content button {
+      background-color: transparent;
+      border: 1px solid #000;
+      color: #000; }
+      .single-product .hentry .entry-content button:hover {
+        background: #248A83;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 0; }
+
+.product-type-description {
+  margin: 2rem auto 3rem;
+  max-width: 800px; }

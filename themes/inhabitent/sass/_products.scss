@@ -1,8 +1,10 @@
-.product .page-header{
-    text-align: center;
-    border-bottom: 1px dashed #c8c8c8;
-    margin-bottom: 3rem;
-}
+.product, .tax-product-type{
+    .page-header{
+        text-align: center;
+        border-bottom: 1px dashed #c8c8c8;
+        margin-bottom: 3rem;
+    }
+} 
 .product-type{
     display: flex;
     justify-content: center;
@@ -57,4 +59,41 @@
         float: right;
         padding-left: 0.25rem;
     }
+}
+.single-product .hentry{
+    display: flex;
+    justify-content: space-between;
+    .product-img{
+        width: 48%;
+    }
+    .product-content-wrapper{
+        width: 48%;
+    }
+    .entry-title{
+        color: $orange_brand_color;
+    }
+    .entry-content{
+        margin-top: 0;
+        .price{
+            font-family: 'Novecento Sans Web', sans-serif;
+            font-size: 1.8rem;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+        button{
+            background-color: transparent;
+            border: 1px solid #000;
+            color: #000;
+            &:hover{
+                background: $color_green_brand;
+                cursor: pointer;
+                color: #fff;
+                border-radius: 0;
+            }
+        }
+    }
+}
+.product-type-description{
+    margin: 2rem auto 3rem;
+    max-width: 800px;
 }

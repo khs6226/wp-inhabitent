@@ -66,7 +66,17 @@
 			padding-bottom: 3rem;
 		}
 	}
-} 
+}
+.single-product, .tax-product-type{
+	.site-content{
+		.content-area{
+			width: 100%;
+			border: 0;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+		}
+	}
+}
 .site {
 	flex: 1 0 auto;
  }
@@ -102,7 +112,9 @@
 		}
 	}
 }
-
+.entry-title, .page-title{
+	margin-top: 0;
+}
 .sticky {
 	display: block;
 }
