@@ -383,7 +383,7 @@ hr {
 
 ul,
 ol {
-  margin: 0; }
+  margin: 0 0 1.5rem 3rem; }
 
 ul {
   list-style: disc; }
@@ -650,20 +650,20 @@ a {
   background-size: cover, cover;
   height: 100vh; }
 
-.blog .site-content, .single .site-content, .journal .site-content, .error404 .site-content {
+.blog .site-content, .single .site-content, .journal .site-content, .error404 .site-content, .archive .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .blog .site-content .content-area, .single .site-content .content-area, .journal .site-content .content-area, .error404 .site-content .content-area {
+  .blog .site-content .content-area, .single .site-content .content-area, .journal .site-content .content-area, .error404 .site-content .content-area, .archive .site-content .content-area {
     border-right: 1px solid #e1e1e1;
     padding-right: 5%;
     padding-top: 3rem;
     padding-bottom: 3rem;
     width: 73%; }
-    .blog .site-content .content-area .entry-header, .single .site-content .content-area .entry-header, .journal .site-content .content-area .entry-header, .error404 .site-content .content-area .entry-header {
+    .blog .site-content .content-area .entry-header, .single .site-content .content-area .entry-header, .journal .site-content .content-area .entry-header, .error404 .site-content .content-area .entry-header, .archive .site-content .content-area .entry-header {
       line-height: 0;
       position: relative; }
-      .blog .site-content .content-area .entry-header h2, .single .site-content .content-area .entry-header h2, .journal .site-content .content-area .entry-header h2, .error404 .site-content .content-area .entry-header h2 {
+      .blog .site-content .content-area .entry-header h2, .single .site-content .content-area .entry-header h2, .journal .site-content .content-area .entry-header h2, .error404 .site-content .content-area .entry-header h2, .archive .site-content .content-area .entry-header h2 {
         background-color: #248A83;
         position: absolute;
         color: #ffffff;
@@ -673,9 +673,9 @@ a {
         padding: 0.75rem 1.5rem;
         margin-top: 2.25rem;
         max-width: 75%; }
-      .blog .site-content .content-area .entry-header a, .single .site-content .content-area .entry-header a, .journal .site-content .content-area .entry-header a, .error404 .site-content .content-area .entry-header a {
+      .blog .site-content .content-area .entry-header a, .single .site-content .content-area .entry-header a, .journal .site-content .content-area .entry-header a, .error404 .site-content .content-area .entry-header a, .archive .site-content .content-area .entry-header a {
         color: #ffffff; }
-      .blog .site-content .content-area .entry-header .entry-meta, .single .site-content .content-area .entry-header .entry-meta, .journal .site-content .content-area .entry-header .entry-meta, .error404 .site-content .content-area .entry-header .entry-meta {
+      .blog .site-content .content-area .entry-header .entry-meta, .single .site-content .content-area .entry-header .entry-meta, .journal .site-content .content-area .entry-header .entry-meta, .error404 .site-content .content-area .entry-header .entry-meta, .archive .site-content .content-area .entry-header .entry-meta {
         background-color: #248A83;
         position: absolute;
         color: #ffffff;
@@ -685,13 +685,13 @@ a {
         display: inline-block;
         font-family: 'Novecento Sans Web', sans-serif;
         padding: 1rem 1.5rem; }
-  .blog .site-content .widget-area, .single .site-content .widget-area, .journal .site-content .widget-area, .error404 .site-content .widget-area {
+  .blog .site-content .widget-area, .single .site-content .widget-area, .journal .site-content .widget-area, .error404 .site-content .widget-area, .archive .site-content .widget-area {
     width: 27%;
     padding-left: 5%;
     padding-top: 3rem;
     padding-bottom: 3rem; }
 
-.single-product .site-content .content-area, .tax-product-type .site-content .content-area {
+.single-product .site-content .content-area, .tax-product-type .site-content .content-area, .product .site-content .content-area {
   width: 100%;
   border: 0;
   padding-top: 3rem;

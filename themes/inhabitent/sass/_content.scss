@@ -20,7 +20,7 @@
 	height: 100vh;
 
 }
-.blog, .single, .journal, .error404{
+.blog, .single, .journal, .error404, .archive{
 	.site-content{
 		display: flex;
 		.content-area{
@@ -67,7 +67,7 @@
 		}
 	}
 }
-.single-product, .tax-product-type{
+.single-product, .tax-product-type, .product{
 	.site-content{
 		.content-area{
 			width: 100%;
