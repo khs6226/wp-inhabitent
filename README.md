@@ -17,7 +17,7 @@ A site related to camping needs based on a WordPress custom theme.
 
 ## Install Guide
 
-### 1. Download this project
+### 1. Download this project(Please do NOT clone!)
 
 Then add it to your `wp-content` directory.
 
