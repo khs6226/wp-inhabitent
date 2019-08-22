@@ -32,6 +32,9 @@
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'secondary') ); ?>
+						<div class='search-bar'>
+							<?php get_search_form(); ?>
+						</div>
 					</nav><!-- #site-navigation -->
 				</div>
 			</header><!-- #masthead -->

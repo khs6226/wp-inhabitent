@@ -997,6 +997,18 @@ object {
     display: -ms-flexbox;
     display: flex; }
 
+.search-bar {
+  padding-left: 1.5rem;
+  line-height: 1; }
+  .search-bar fieldset {
+    padding: 0; }
+  .search-bar a {
+    display: block;
+    float: left; }
+  .search-bar label {
+    float: left;
+    display: none; }
+
 .product .page-header, .tax-product-type .page-header {
   text-align: center;
   border-bottom: 1px dashed #c8c8c8;

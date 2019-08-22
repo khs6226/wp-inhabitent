@@ -18,3 +18,18 @@
         display: flex;
     }
 }
+.search-bar{
+    padding-left: 1.5rem;
+    line-height: 1;
+    fieldset{
+        padding: 0;
+    }
+    a{
+        display: block;
+        float: left;
+    }
+    label{
+        float: left;
+        display: none;
+    }
+}
