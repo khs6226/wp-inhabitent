@@ -1002,12 +1002,29 @@ object {
   line-height: 1; }
   .search-bar fieldset {
     padding: 0; }
-  .search-bar a {
+  .search-bar button {
     display: block;
-    float: left; }
-  .search-bar label {
     float: left;
-    display: none; }
+    background-color: transparent;
+    padding: 0.3rem 0 0 0; }
+    .search-bar button i {
+      color: #248A83; }
+  .search-bar label {
+    width: 0;
+    float: left;
+    margin: 0;
+    -webkit-transition: width 2s;
+    transition: width 2s; }
+    .search-bar label input {
+      background: transparent;
+      border: 0;
+      padding: 0;
+      text-transform: uppercase;
+      margin-left: 0.75rem;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-weight: normal; }
+      .search-bar label input:focus {
+        outline: none; }
 
 .product .page-header, .tax-product-type .page-header {
   text-align: center;

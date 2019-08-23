@@ -1,9 +1,13 @@
 $(function() {
+    const $label = $('.search-label');
+    const $input = $('.search-field');
     $('.toggle').on('click', function() {
-        $('.search-label').show();
-        $('.search-field').focus();
+        $label.css('width', '200');
+        $input.css('width', '195');
+        $input.focus();
     });
-    $('.search-field').blur(function() {
-        $('.search-label').hide();
+    $input.blur(function() {
+        $lable.css('width', '0');
+        $input.css('width', '0');
     });
 });

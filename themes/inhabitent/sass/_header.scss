@@ -24,12 +24,33 @@
     fieldset{
         padding: 0;
     }
-    a{
+    button{
         display: block;
         float: left;
+        background-color: transparent;
+        padding: 0.3rem 0 0 0;
+        i{
+            color: $color_green-brand;
+        }
     }
     label{
+        width: 0;
         float: left;
-        display: none;
+        margin: 0;
+        transition: width 1s;
+        input{
+            width: 0;
+            transition: width 1s;
+            background: transparent;
+            border: 0;
+            padding: 0;
+            text-transform: uppercase;
+            margin-left: 0.75rem;
+            font-family: 'Novecento Sans Web', sans-serif;
+            font-weight: normal;
+            &:focus {
+                outline: none;
+            }
+        }
     }
 }
