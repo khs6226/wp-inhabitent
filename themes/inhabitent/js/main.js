@@ -7,7 +7,7 @@ $(function() {
         $input.focus();
     });
     $input.blur(function() {
-        $lable.css('width', '0');
+        $label.css('width', '0');
         $input.css('width', '0');
     });
 });

@@ -2,40 +2,5 @@
 # Embedded Fonts
 --------------------------------------------------------------*/
 
-@font-face{
-    font-family: 'Merriweather Web';
-    src: url(../../fonts/Merriweather/fonts/merriweather-light-webfont.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face{
-    font-family: 'Merriweather Web';
-    src: url(../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf);
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face{
-    font-family: 'Merriweather Web';
-    src: url(../../fonts/Merriweather/fonts/merriweather-bold-webfont.ttf);
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face{
-    font-family: 'Merriweather Web';
-    src: url(../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf);
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face{
-    font-family: 'Novecento Sans Web';
-    src: url(../../fonts/Novecento/fonts/Novecentosanswide-normal-webfont.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face{
-    font-family: 'Novecento Sans Web';
-    src: url(../../fonts/Novecento/fonts/Novecentosanswide-demibold-webfont.ttf);
-    font-weight: bold;
-    font-style: normal;
-}
+@import '../fonts/Merriweather/style.css';
+@import '../fonts/Novecento/style.css';
