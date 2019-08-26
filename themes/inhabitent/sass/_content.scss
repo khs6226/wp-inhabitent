@@ -67,6 +67,29 @@
 		}
 	}
 }
+.search-results {
+	.site-content{
+		display: flex;
+		.content-area{
+			border-right: 1px solid #e1e1e1;
+			padding-right: 5%;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+			width: 73%;
+			.page-header {
+				border-bottom: 1px solid #e1e1e1;
+				margin-bottom: 3rem;
+				padding-bottom: 1rem;
+			}
+		}
+		.widget-area{
+			width: 27%;
+			padding-left: 5%;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+		}
+	}
+}
 .single-product, .tax-product-type, .product{
 	.site-content{
 		.content-area{
@@ -112,6 +135,7 @@
 		}
 	}
 }
+
 .entry-title, .page-title{
 	margin-top: 0;
 }

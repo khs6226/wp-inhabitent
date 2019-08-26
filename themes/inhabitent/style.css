@@ -657,6 +657,26 @@ a {
     padding-top: 3rem;
     padding-bottom: 3rem; }
 
+.search-results .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .search-results .site-content .content-area {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 73%; }
+    .search-results .site-content .content-area .page-header {
+      border-bottom: 1px solid #e1e1e1;
+      margin-bottom: 3rem;
+      padding-bottom: 1rem; }
+  .search-results .site-content .widget-area {
+    width: 27%;
+    padding-left: 5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+
 .single-product .site-content .content-area, .tax-product-type .site-content .content-area, .product .site-content .content-area {
   width: 100%;
   border: 0;

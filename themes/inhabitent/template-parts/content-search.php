@@ -20,5 +20,8 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
+		<p>
+			<a class='read-more' href="<?php echo esc_url(get_permalink()) ?>">Read more</a>
+		</p>
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->
