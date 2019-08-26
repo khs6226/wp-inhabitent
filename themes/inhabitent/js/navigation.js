@@ -24,19 +24,19 @@ jQuery(document).ready(function($) {
 });
 
 (function() {
-  let container, button, menu, links, i, len;
+  let i, len;
 
-  container = document.getElementById('site-navigation');
+  const container = document.getElementById('site-navigation');
   if (!container) {
     return;
   }
 
-  button = container.getElementsByTagName('button')[0];
+  const button = container.getElementsByTagName('button')[0];
   if ('undefined' === typeof button) {
     return;
   }
 
-  menu = container.getElementsByTagName('ul')[0];
+  const menu = container.getElementsByTagName('ul')[0];
 
   // Hide menu toggle button if menu is empty and return early.
   if ('undefined' === typeof menu) {
@@ -62,7 +62,7 @@ jQuery(document).ready(function($) {
   };
 
   // Get all the link elements within the menu.
-  links = menu.getElementsByTagName('a');
+  const links = menu.getElementsByTagName('a');
 
   // Each time a menu link is focused or blurred, toggle focus.
   for (i = 0, len = links.length; i < len; i++) {
