@@ -67,7 +67,7 @@
 		}
 	}
 }
-.search-results {
+.search {
 	.site-content{
 		display: flex;
 		.content-area{
@@ -80,6 +80,24 @@
 				border-bottom: 1px solid #e1e1e1;
 				margin-bottom: 3rem;
 				padding-bottom: 1rem;
+			}
+			.search-pagination {
+				border-top: 1px solid #e1e1e1;
+				font-family: 'Novecento Sans Web', sans-serif;
+				padding: 1.5rem 0;
+				text-transform: uppercase;
+				.page-numbers{
+					display: inline-block;
+					text-align: center;
+					background-color: $color_green-brand;
+					color: #fff;
+					line-height: 1;
+					margin-right: 0.25rem;
+					padding: 0.5rem 0.75rem;
+					.current{
+						background-color: gray;
+					}
+				}
 			}
 		}
 		.widget-area{
