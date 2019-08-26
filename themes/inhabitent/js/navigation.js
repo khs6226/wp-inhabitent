@@ -4,6 +4,25 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
+
+jQuery(document).ready(function($) {
+
+  // Append search-bar on click.
+  const $label = $('.search-label');
+  const $input = $('.search-field');
+  $('.toggle').on('click', function() {
+    $label.css('width', '200');
+    $input.css('width', '195');
+    $input.focus();
+  });
+
+  // Hide search-bar on blur.
+  $input.blur(function() {
+    $label.css('width', '0');
+    $input.css('width', '0');
+  }); 
+});
+
 (function() {
   let container, button, menu, links, i, len;
 
