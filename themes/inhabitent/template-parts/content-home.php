@@ -7,7 +7,6 @@
 
 ?>
 
-<!-- <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> -->
 <section class='hero-home'>
 	<img src="wp-content/themes/inhabitent/images/inhabitent-logo-full.svg" alt="inhabitent full logo">
 </section>

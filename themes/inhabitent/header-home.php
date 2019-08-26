@@ -24,8 +24,8 @@
 				<div class="container">
 					<div class="site-branding">
 						<div class="logo">
-							<a href="http://localhost/inhabitent">
-								<img src="wp-content/themes/inhabitent/images/inhabitent-logo-tent.svg" alt="inhabitent logo">
+							<a href="<?php echo esc_url(home_url('/')); ?>">
+								<img src="<?php echo get_stylesheet_directory_uri().'/images/inhabitent-logo-tent.svg'; ?>" alt="inhabitent logo">
 							</a>
 						</div>
 					</div><!-- .site-branding -->

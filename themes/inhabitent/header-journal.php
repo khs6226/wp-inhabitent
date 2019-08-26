@@ -24,14 +24,17 @@
 				<div class="container">
 					<div class="site-branding">
 						<div class="logo">
-							<a href="http://localhost/inhabitent">
-								<img src="../wp-content/themes/inhabitent/images/inhabitent-logo-tent.svg" alt="inhabitent logo">
+							<a href="<?php echo esc_url(home_url('/')); ?>">
+								<img src="<?php echo get_stylesheet_directory_uri().'/images/inhabitent-logo-tent.svg'; ?>" alt="inhabitent logo">
 							</a>
 						</div>
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'secondary') ); ?>
+						<div class='search-bar'>
+							<?php get_search_form(); ?>
+						</div>
 					</nav><!-- #site-navigation -->
 				</div>
 			</header><!-- #masthead -->
