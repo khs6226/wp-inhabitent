@@ -1,13 +1,13 @@
 <?php
  /**
  *
- * @package   [Inhabitent] Functionality
+ * @package   Inhabitent Functionality
  * @author    Hongsoon Kim <khsun6226@naver.com>
  * @license   GPL-2.0+
  * @copyright 2019 Hongsoon Kim
  *
  * @wordpress-plugin
- * Plugin Name: [Inhabitent] Functionality
+ * Plugin Name: Inhabitent Functionality
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
  * Author:      Hongsoon Kim
